@@ -1,0 +1,54 @@
+# --------------------------------------
+# Core Django + Environment Management
+# --------------------------------------
+Django==3.2.20
+django-environ==0.9.0        # For environment variables
+dj-database-url==0.5.0      # Manage DB configs via URLs
+
+# --------------------------------------
+# Web Server & Static Files
+# --------------------------------------
+gunicorn==20.1.0            # Production WSGI server
+whitenoise==6.0.0           # Serve static files in production
+
+# --------------------------------------
+# Database (PostgreSQL)
+# --------------------------------------
+psycopg2-binary==2.9.6
+
+# --------------------------------------
+# Celery & Redis (Asynchronous Tasks)
+# --------------------------------------
+celery==5.2.7
+redis==4.4.4
+
+# --------------------------------------
+# Authentication (Optional)
+# --------------------------------------
+django-allauth==0.52.0       # Integrates social auth, email-based auth
+social-auth-app-django==5.0.0
+
+# --------------------------------------
+# CORS & Other Useful Django Add-ons
+# --------------------------------------
+django-cors-headers==3.14.0  # Handle cross-origin requests
+django-extensions==3.2.3     # Shell Plus, etc. (developer helpers)
+# django-debug-toolbar==3.9.0  # Debugging panel in development
+
+# --------------------------------------
+# Image Handling
+# --------------------------------------
+Pillow==9.3.0
+
+# --------------------------------------
+# Testing & Linting
+# --------------------------------------
+pytest==7.2.0
+pytest-django==4.5.2
+coverage==7.0.5
+flake8==6.0.0
+black==23.1.0
+
+# --------------------------------------
+# Lock specific version of pip if desired (optional)
+# pip==23.1
